@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  font-size: 1.6rem;
+  color: #000000e3;
+  background-color: #e0e0e0;
+}
+
+.main-content {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  position: relative;
+  width: 40rem;
+  height: 57rem;
+  overflow: hidden;
+  border-radius: 5rem;
+  background: linear-gradient(145deg, #cacaca, #f0f0f0);
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+}
+
+.card__img {
+  display: block;
+  width: 100%;
+  height: 35%;
+  object-fit: cover;
+}
+
+.card__profile {
+  position: absolute;
+  left: 32%;
+  top: 22%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 35%;
+  height: 25%;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.card__content {
+  height: 100%;
+  padding: 4rem;
+}
+
+.name {
+  margin: 3.5rem 0 1rem;
+  text-align: center;
+}
+
+.description {
+  margin: 0 0 2rem;
+}
+
+.more-info {
+  display: flex;
+  justify-content: space-between;
+  height: 3rem;
+}
+
+.more-info {
+  margin: 0 0 5rem;
+}
+
+.more-info div {
+  display: flex;
+}
+
+.more-info img {
+  display: block;
+}
+
+.more-info a,
+.more-info span {
+  line-height: 3rem;
+}
+
+.more-info a {
+  color: inherit;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: space-evenly;
+  height: 3rem;
+}
+
+.social-icons img {
+  cursor: pointer;
+  height: 100%;
+}

@@ -1,0 +1,112 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.6rem;
+  background-color: #05101a;
+  color: #fff;
+}
+
+.button {
+  border: 1px solid #fff;
+  border-radius: 3px;
+  color: inherit;
+  background-color: inherit;
+}
+
+.button:hover {
+  color: #05101a;
+  background-color: #fff;
+}
+
+.button:active {
+  color: inherit;
+  background-color: inherit;
+}
+
+.text {
+  line-height: 2.4rem;
+}
+
+.text:nth-child(even) {
+  color: #7fffd4;
+}
+
+.text:nth-child(odd)::first-letter {
+  color: #f00;
+  font-size: 3.2rem;
+}
+
+.text::after {
+  content: "✨";
+}
+
+/* Flexbox */
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 3rem;
+  padding: 3rem;
+  border: 1px solid #f00;
+}
+
+.flex-box {
+  width: 20rem;
+  border: 2px solid #7fffd4;
+  background-color: #3e9979;
+}
+
+.flex-box:nth-child(odd) {
+  background-color: grey;
+  border: 2px solid lightcoral;
+}
+
+/* Grid */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* grid-template-rows: 1fr 1fr 1fr 1fr; */
+  gap: 3rem;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 3rem;
+  border: 1px solid #f00;
+}
+
+.grid-box {
+  /* width: 20rem; */
+  border: 2px solid #7fffd4;
+  background-color: #3e9979;
+}
+
+.grid-box:nth-child(odd) {
+  background-color: grey;
+  border: 2px solid lightcoral;
+}
+
+/* ----------------------------------- */
+.pos {
+  position: relative;
+  width: 50rem;
+  height: 50rem;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #333;
+}
+
+.box-pos {
+  width: 20%;
+  height: 20%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: lightcoral;
+}
